@@ -1,6 +1,6 @@
 const removeFromArray = function(arr, index) {
-       return arr.splice(index, 1); 
-
+        arr.splice(index -1 ,1)
+        return arr;
 };
 
 // Do not edit below this line
