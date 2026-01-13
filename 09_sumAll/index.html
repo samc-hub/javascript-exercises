@@ -8,17 +8,23 @@
 <body>
     
 <script>
+const sumAll = function(num1, num2) {
+
 let newArr = [];
    
-let i = 4;
-    while (i >= 0) {
+let i = num2;
+    while (i >= num1 ) {
     newArr.push(i);
     
     i--;
 
     };
 
-console.log(newArr);
+return newArr;
+}
+
+
+console.log(sumAll(1,4));
 
 
 
