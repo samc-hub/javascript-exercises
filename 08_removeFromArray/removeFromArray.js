@@ -1,7 +1,20 @@
-const removeFromArray = function(arr, index) {
-        arr.splice(index -1 ,1)
-        return arr;
+
+const removeFromArray = function (array, ...args) {
+
+      const newArr = [];
+
+      array.forEach((item) => { 
+      
+      if  (!args.includes(item)) {
+            newArr.push(item);
+      } 
+      });
+
+return newArr;
+
+
 };
+
 
 // Do not edit below this line
 module.exports = removeFromArray;
