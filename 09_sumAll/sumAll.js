@@ -1,7 +1,7 @@
 
 
-/* const sumAll = function(num1, num2) {
-    let newArr = [] */
+const sumAll = function(num1, num2) {
+    let newArr = [] 
     let i = 10;
 
     while (i >= 0) {
