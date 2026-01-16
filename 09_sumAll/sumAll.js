@@ -2,8 +2,20 @@
 const sumAll = function(num1, num2) {
 
 let newArr = [];
+   
+    if (isNaN(num2) || isNaN(num1)) {
+        return "ERROR"
+    }
+    
+    else if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
+        return "ERROR"
+    }
 
-    if (num2 > num1) {
+
+    else if (num1 < 0 || num2 < 0) {
+    return "ERROR";
+   }
+    else if (num2 > num1) {
        let i = num2;
         while (i >= num1 ) {
         newArr.push(i);
