@@ -1,17 +1,7 @@
       
-       const leapYears = function(num) {
-        
-        if (num % 4 == 0 && num % 400 == 0) {
-            return true;
-        } else if (num % 4 == 0 && num % 100 !== 0) {
-            return true;
-        } else if (num % 100 == 0 && num % 400 !== 0) {
-            return false; 
-        } else if (num & 100 == 0 && num % 400 == 0) {
-            return true;
-        } else {
-            return false; 
-        }
-    }
+const leapYears = function(year) {
+  return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+};
+
 // Do not edit below this line
 module.exports = leapYears;
