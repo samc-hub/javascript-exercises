@@ -3,11 +3,8 @@ const sumAll = function(num1, num2) {
 
 let newArr = [];
    
-    if (isNaN(num2) || isNaN(num1)) {
-        return "ERROR"
-    }
     
-    else if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
+    if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
         return "ERROR"
     }
 
