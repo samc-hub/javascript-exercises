@@ -1,4 +1,8 @@
-const fibonacci = function() {
+const fibonacci = function(num) {
+    let makeNum = num.toNumber();
+    for (let i = 0; i > makeNum; i++) {
+        return 
+    }
 
 };
 
